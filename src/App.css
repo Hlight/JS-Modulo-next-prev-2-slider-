@@ -1,0 +1,66 @@
+main {
+  text-align: center;
+}
+
+/* Buttons */
+button[class*="btn"] {
+  position: absolute;
+  z-index: 10;
+  top: 50%;
+  padding-top: .33rem;
+  padding-bottom: .22rem;
+}
+button.btnLeft {
+  left: 0.5rem;
+  padding-right: 2.2rem;
+}
+button.btnRight {
+  right: 0.5rem;
+  padding-left: 2.2rem;
+}
+button select {
+  z-index: 11;
+  position: absolute;
+  margin: .15rem;
+}
+button.btnRight select {
+  left: 0;
+  top: 0;
+}
+button.btnLeft select {
+  right: 0;
+  top: 0;
+}
+
+/* Items */
+.items {
+  width: 100vw;
+  height: 100vh;
+}
+.item {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  overflow: hidden;
+  
+}
+.item span {
+  display: inline;
+  vertical-align: center;
+  line-height: 100vh;
+  font-size: 27rem;
+}
+
+.item.current {
+  position: absolute;
+  opacity: 1;
+  z-index: 1;
+}
+
+.item {
+  background: lightblue;
+}
